@@ -1,0 +1,80 @@
+# ======================================================
+# NODE & PACKAGE MANAGERS
+# ======================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+
+# ======================================================
+# ENVIRONMENT VARIABLES (CRITICAL)
+# ======================================================
+.env
+.env.*       # .env.local .env.production vs.
+!.env.example # örnek dosya paylaşmak istersen izinli
+
+# ======================================================
+# BUILD / OUTPUT / TEMP FILES
+# ======================================================
+dist/
+build/
+coverage/
+.cache/
+.tmp/
+temp/
+
+# ======================================================
+# LOGS
+# ======================================================
+logs/
+*.log
+*.log.*
+nohup.out
+
+# ======================================================
+# OS & EDITOR FILES
+# ======================================================
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------
+# IDE / EDITOR CONFIG
+# ------------------------------------------------------
+# VSCode
+.vscode/*
+!.vscode/settings.json   # izin vermek istersen
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains / WebStorm / IntelliJ
+.idea/
+*.iml
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# ======================================================
+# DATABASE / ORM / MIGRATIONS
+# ======================================================
+# SQLite
+*.sqlite
+*.sqlite3
+
+# Prisma
+.prisma/
+prisma/migrations/*-dev/
+
+# Sequelize
+sequelize.log
+
+# ======================================================
+# DOCKER (Eğer kullanıyorsan)
+# ======================================================
+/docker-data/
+*.pid
+*.seed
